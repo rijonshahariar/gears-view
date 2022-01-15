@@ -318,8 +318,8 @@ footer{
 /* Media Query For Responsiveness */
 
 /* For Tablet View */
-@media only screen and (min-device-width: 500px)
-and (max-device-width: 830px) {
+@media only screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
     header{
         max-width: 100%;
     }
@@ -355,8 +355,15 @@ max-width:80%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-items:center;
+
+    
 }
 
+.subscribe{
+   
+    max-width: 100%;
+
+}
 }
 
 /* For Landscape View */
@@ -397,6 +404,12 @@ max-width:80%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-items:center;
+}
+
+.subscribe{
+   
+    max-width: 100%;
+
 }
 
 } 
