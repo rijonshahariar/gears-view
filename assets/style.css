@@ -40,6 +40,10 @@ margin-bottom:10px;
     cursor: pointer;
 }
 
+.btn:hover{
+    opacity: 0.7;
+    transition: .5s ease;
+}
 
 /* -------------------
 Products style 
@@ -50,12 +54,14 @@ Products style
     margin:20px auto;
     padding:0 auto;
     border-radius:5px;
+    padding-bottom: 50px;
 }
 
 .container a{
     text-decoration: none;
     color:#E02C6D;
 float: right;
+
 }
 .section-title{
     margin-top:80px;
@@ -162,8 +168,33 @@ max-width:80%;
     justify-items:center;
 }
 }
+
+/* For Landscape View */
+@media only screen and (min-device-width: 499px)
+and (max-device-width: 766px) {
+  .top-section {
+      display: grid;
+      justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+max-width:80%;
+  }
+
+  .top-section img{
+      margin-top:30px;
+      width:100%;
+  }
+
+  .products{
+   text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items:center;
+}
+}
+
+
 /* For Mobile Portrait View */
-@media only screen and (min-width: 200px) and (max-width:500px){
+@media only screen and (min-width: 200px) and (max-width:767px){
     .top-section {
         display: grid;
         justify-content: center;
@@ -176,7 +207,7 @@ max-width:80%;
     }
 
     .products{
-   
+        text-align: center;
         display: grid;
         grid-template-columns: repeat(1,1fr);
         justify-items:center;
